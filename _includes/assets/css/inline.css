@@ -252,6 +252,7 @@ marquee span:before {
 
 .ignore {
   text-decoration: none;
+  font-family: "Playfair Display", serif;
 }
 
 /* Post Tags */
