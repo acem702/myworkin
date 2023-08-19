@@ -3,7 +3,7 @@
 :root {
   --primary: black;
   --secondary: white;
-  --background: #94918f;
+  --background: #e9e6e4;
 }
 
 *,
@@ -93,7 +93,7 @@ pre {
 }
 
 .page-header {
-  background: #e9e6e4;
+  background: #94918f;
   padding: 0 10px;
 }
 .page-header nav {
@@ -159,6 +159,7 @@ marquee span:before {
 /* Posts List */
 .blog-article {
   padding: 0 5px;
+  margin-top: 10px;
 }
 
 .blog-article img {
