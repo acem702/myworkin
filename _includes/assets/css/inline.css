@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary: blue;
+  --primary: black;
   --secondary: white;
-  --background: #fff0eb;
+  --background: #94918f;
 }
 
 *,
@@ -158,7 +158,7 @@ marquee span:before {
 
 /* Posts List */
 .blog-article {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .blog-article img {
@@ -216,7 +216,6 @@ marquee span:before {
   line-height: 1.2;
   margin: 8px 0 8px;
 }
-
 
 .blog-article p {
   line-height: 1.5;
