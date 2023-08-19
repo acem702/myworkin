@@ -188,6 +188,22 @@ button {
 	color: var(--secondary);
 	cursor: pointer;
 }
+/* footers */
+footer {
+  opacity: 0.67;
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline: 1rlh;
+  block-size: calc(2rem - 0.5rem);
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.67rem;
+  font-stretch: 70%;
+  border-block-start: 1px solid;
+  padding-block-start: 0.25em;
+  box-sizing: border-box;
+}
 
 @media screen and (min-width:768px) {
 	:root {
