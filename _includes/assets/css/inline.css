@@ -231,8 +231,10 @@ marquee span:before {
   justify-content: flex-end;
   align-items: center;
   margin-top: auto;
-  border-top: 1px solid #94918f;
-  padding-top: 14px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .blog-article a svg {
