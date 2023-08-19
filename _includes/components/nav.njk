@@ -1,4 +1,7 @@
 <nav>
+			<h2>
+				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+			</h2>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
     {%- for entry in navPages %}
