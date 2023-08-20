@@ -1,11 +1,11 @@
 <div class="marquee-container">
-  {% for post in postslist | reverse %}
-    <a href="{{ post.url | url }}" class="ignore marquee-item">
-      {% if post.data.title %}
-        {{ post.data.title }}
-      {% else %}
-        Untitled
-      {% endif %}
-    </a>
+  {% for post in postslist | reverse | slice(0, 10) %}
+  <a href="{{ post.url | url }}" class="ignore marquee-item">
+    {% if post.data.title %}
+    {{ post.data.title }}
+    {% else %}
+    Untitled
+    {% endif %}
+  </a>
   {% endfor %}
 </div>
