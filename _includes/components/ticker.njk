@@ -1,0 +1,11 @@
+<div class="marquee-container">
+  {% for post in postslist | reverse %}
+    <a href="{{ post.url | url }}" class="ignore marquee-item">
+      {% if post.data.title %}
+        {{ post.data.title }}
+      {% else %}
+        Untitled
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
