@@ -1,14 +1,14 @@
 ---
 layout: layouts/base.njk
 pagination:
-data: collections.authors
-size: 1
-alias: author
+  data: collections.authors
+  size: 1
+  alias: author
 permalink: "authors/{{ author | slug }}/"
 eleventyComputed:
-author: "{{ author }}"
-title: "Posts by {{ author }}"
-metaDescription: "An archive of all posts by the author: {{ author }}."
+  author: "{{ author }}"
+  title: "Posts by {{ author }}"
+  metaDescription: "An archive of all posts by the author: {{ author }}."
 ---
 
 <h1>{{ title }}</h1>
