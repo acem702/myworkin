@@ -15,43 +15,43 @@ metaDescription: "An archive of all posts by the author: {{ author }}."
 
 <section>
   {% for post in collections.authors[author] | reverse %}
-  <div class="blog-article"{% if post.url==url %} data-current="current item"{% endif %}>
+  <div class="blog-article"{% if post.page.url == url %} data-current="current item"{% endif %}>
     <img
     src="https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     alt=""
     />
   <h2>
-    <a href="{{ post.url | url }}" class="ignore">
-      {% if post.data.title %}
-      {{ post.data.title }}
-      {% else %}
-      Untitled
-      {% endif %}
-    </a>
+    <a href="{{ post.page.url | url }}">
+					{% if post.title %}
+						{{ post.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
   </h2>
   <div class="blog-detail" datetime="{{ post.date | machineDate }}">
-    <span>By <a href="/authors/{{ post.data.author | slug }}/" class="ignore">{{ post.data.author }}</a></span>
+    <span>By <a href=/authors/{{ post.author | slug }}/">{{ post.author }}</a></span>
     <span>{{ post.date | readableDate }}</span>
   </div>
 
-  {% if post.data.summary %}
-  <p>
-    {{ post.data.summary }}
-  </p>
-  {% endif %}
+  {% if post.summary %}
+				<p>
+					{{ post.summary }}
+				</p>
+			{% endif %}
   <div class="tags">
-    {% if post.data.tags %}
-    <p>
-      {% for tag in post.data.tags %}
-      {%- if tag != "post" -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" rel="tag" class="ignore">{{ tag }}</a>
-      {%- endif -%}
-      {% endfor %}
-    </p>
-    {% endif %}
+    {% if post.tags %}
+				<p>
+					{% for tag in post.tags %}
+		  			{%- if tag != "post" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
   </div>
-  <a href="{{ post.url | url }}">
+  <a href="{{ post.page.url | url }}">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -65,11 +65,11 @@ metaDescription: "An archive of all posts by the author: {{ author }}."
       <path d="M15 10l5 5-5 5" />
       <path d="M4 4v7a4 4 0 004 4h12" />
     </svg>
-    See More
+    Read
   </a>
 </div>
-{% endfor %}
-<nav>
-  <a href="{{ '/authors/' | url }}">← Authors index</a>
-</nav>
+  {% endfor %}
+  <nav>
+    <a href="{{ '/authors/' | url }}">← Authors index</a>
+  </nav>
 </section>
