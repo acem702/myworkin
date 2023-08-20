@@ -1,5 +1,3 @@
-// Add your inline JS 
-/*Confignav*************************************/
 function showConfig() {
   if (offen.wert == "nein") {
     document.getElementById("myconfig").style.height = "100vh";
