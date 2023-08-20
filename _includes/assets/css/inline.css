@@ -53,7 +53,7 @@ img {
 header,
 main,
 footer {
-  padding: 1em;
+  padding: 0;
 }
 
 main {
@@ -116,7 +116,7 @@ pre {
 
 .page-header .cta-contact {
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 5px 18px;
   border: 1px solid;
   border-radius: 5px;
