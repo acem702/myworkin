@@ -7,13 +7,13 @@
 
   <header class="page-header">
     {% include "components/nav.njk" %}
-    {% include "components/featured.njk" %}
   </header>
-
+    {% include "components/featured.njk" %}
+    
   <main>
     {{ layoutContent | safe }}
   </main>
-  
+
   {% include "components/footer.njk" %}
 
 </body>
