@@ -1,5 +1,5 @@
 <marquee width="100%" direction="left">
-  {% for post in posts | slice(0, 10) %}
-    <span>{{ post.title }}</span>
+  {% for post in posts | slice(0, 5) %}
+  <span>{{ post.title }}</span>
   {% endfor %}
 </marquee>
