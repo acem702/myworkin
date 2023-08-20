@@ -441,7 +441,7 @@ footer {
 }
 
 .circle {
-  width: 85%;
+  width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: #121418;
