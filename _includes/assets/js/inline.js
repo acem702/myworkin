@@ -1,3 +1,9 @@
+/*Sidenav*************************************/
+var offen = new SpeicherDas("nein");
+function SpeicherDas(Wert) {
+  this.wert = Wert;
+}
+
 function showConfig() {
   if (offen.wert == "nein") {
     document.getElementById("myconfig").style.height = "100vh";
