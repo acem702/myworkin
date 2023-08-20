@@ -155,6 +155,25 @@ marquee span:before {
   background-color: #e9e6e4;
   margin: 0 16px;
 }
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-item {
+  display: inline-block;
+  padding-right: 20px; /* Adjust as needed */
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 /* Posts List */
 .blog-article {
