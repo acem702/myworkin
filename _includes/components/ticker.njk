@@ -1,5 +1,9 @@
 <marquee width="100%" direction="left">
-  {% for post in posts | slice(0, 5) %}
-  <span>{{ post.title }}</span>
+  {% for post in postslist | slice(0, 5) %}
+  <span>{% if post.data.title %}
+      {{ post.data.title }}
+      {% else %}
+      Untitled
+      {% endif %}</span>
   {% endfor %}
 </marquee>
