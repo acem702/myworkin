@@ -30,7 +30,7 @@ metaDescription: "An archive of all posts by the author: {{ author }}."
 				</a>
   </h2>
   <div class="blog-detail" datetime="{{ post.date | machineDate }}">
-    <span>By <a href=/authors/{{ post.author | slug }}/">{{ post.author }}</a></span>
+    <span>By <a href="/authors/{{ post.author | slug }}/" class="ignore">{{ post.author }}</a></span>
     <span>{{ post.date | readableDate }}</span>
   </div>
 
