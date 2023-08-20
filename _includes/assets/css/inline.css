@@ -50,10 +50,9 @@ img {
   height: auto;
 }
 
-header,
 main,
 footer {
-  padding: 0;
+  padding: 1em;
 }
 
 main {
