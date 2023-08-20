@@ -315,6 +315,7 @@ button:not(.cta-contact) {
   color: var(--secondary);
   cursor: pointer;
 }
+
 /* footers */
 footer {
   opacity: 0.67;
@@ -335,5 +336,152 @@ footer {
 @media screen and (min-width: 768px) {
   :root {
     font-size: 1.1rem;
+  }
+}
+
+/* featured navigation */
+
+.blog-right {
+  overflow: auto;
+  width: auto;
+  height: 100vh;
+  margin: 20px;
+}
+
+.blog-right .rounded {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.blog-right .rounded:before {
+  content: "";
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: #161419;
+  margin-right: 6px;
+}
+
+.blog-right-title {
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+}
+
+.blog-right-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #94918f;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .blog-right-title-container {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .blog-right-title-container {
+    margin-top: 6vw;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .blog-right-title-container {
+    margin-top: 5vw;
+  }
+}
+
+.blog-title-date {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.blog-right-page {
+  font-size: 56px;
+  margin-bottom: 16px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.blog-right-page-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  max-width: 16ch;
+  letter-spacing: -2px;
+}
+
+.blog-right-page-subtitle {
+  max-width: 33ch;
+  font-size: 15px;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.blog-right-container + .blog-right-container {
+  margin-top: 40px;
+}
+
+.right-blog {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e9e6e4;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.circle {
+  width: 85%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #121418;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #e9e6e4;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.circle-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@media screen and (max-width: 1030px) {
+  .circle-title {
+    display: none;
+  }
+}
+
+.circle-subtitle {
+  max-width: 30ch;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.circle-footer {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 560px) {
+  .blog-is-sticky {
+    display: none;
   }
 }
